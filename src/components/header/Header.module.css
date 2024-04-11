@@ -1,0 +1,52 @@
+.container {
+    margin: 0;
+    padding: 0;
+    height: 300px;
+    width: 100%;
+    background-image: url('../../assets/images/pattern-bg-mobile.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 1.3rem;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    width: 90%;
+    gap: 0;
+    border: none;
+    border-radius: 10px;
+}
+
+.textInput {
+    border:none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin: 0;
+    width: 80%;
+    height: 100%;
+    padding: 1rem;
+}
+
+.textInput::placeholder {
+    font-family: inherit;
+    font-weight: 500;
+}
+
+.submitButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 20%;
+    background-color: var(--very-dark-gray);
+}
