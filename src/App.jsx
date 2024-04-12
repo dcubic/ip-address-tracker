@@ -1,6 +1,6 @@
 import Header from './components/header/Header.jsx';
 import IpInfo from './components/ip-info/IpInfo.jsx';
-import Map from './components/Map';
+import Map from './components/map/Map.jsx';
 
 import { useState } from 'react';
 
