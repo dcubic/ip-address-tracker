@@ -1,5 +1,5 @@
-.background {
-    /* width: 375px;
-    height: 100%;
-    background-color: red; */
+.flexContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

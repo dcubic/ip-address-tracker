@@ -1,5 +1,5 @@
 import Header from './components/header/Header.jsx';
-// import IpInfo from './components/IpInfoModal.jsx';
+import IpInfo from './components/ip-info/IpInfo.jsx';
 import Map from './components/Map';
 
 import { useState } from 'react';
@@ -18,9 +18,9 @@ function App() {
   const [ipAddressInformation, setIpAddressInformation] = useState(initialState);
 
   return (
-    <div className={styles.background}>
+    <div className={styles.flexContainer}>
       <Header ipAddressInformation={ipAddressInformation}/>
-      {/* <IpInfo /> */}
+      <IpInfo ipAddressInformation={ipAddressInformation}/>
       <Map />
     </div>
   );

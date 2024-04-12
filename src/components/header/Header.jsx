@@ -1,8 +1,6 @@
 import styles from "./Header.module.css";
 import ArrowIcon from "../../assets/images/icon-arrow.svg?react";
 
-import IpInfo from '../ip-info/IpInfo.jsx'
-
 export default function Header({ipAddressInformation}) {
   return (
     <div className={styles.container}>
@@ -15,9 +13,6 @@ export default function Header({ipAddressInformation}) {
         ></input>
         <button className={styles.submitButton}><ArrowIcon /></button>
       </fieldset>
-      <div>
-        <IpInfo ipAddressInformation={ipAddressInformation}/>
-      </div>
     </div>
   );
 }
