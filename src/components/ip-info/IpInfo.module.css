@@ -1,9 +1,13 @@
 .container {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     width: 90%;
     background-color: white;
     border-radius: 10px;
     position: absolute;
     z-index: 1000;
-    transform: translateY(200px);
+    transform: translateY(135px);
+    padding: 1rem 0;
+    gap: 1rem;
 }

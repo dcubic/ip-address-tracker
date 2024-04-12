@@ -1,8 +1,10 @@
-export default function InformationBlock({name, value}) {
-    return (
-        <div>
-            <h2>IP ADDRESS</h2>
-            <p>{ipAddressInformation.ipAddress}</p>
-        </div>
-    )
+import styles from './InformationBlock.module.css';
+
+export default function InformationBlock({ name, value }) {
+  return (
+    <div className={styles.container}>
+      <h2 className={styles.name}>{name}</h2>
+      <p className={styles.value}>{value}</p>
+    </div>
+  );
 }
