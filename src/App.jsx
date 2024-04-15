@@ -8,10 +8,10 @@ import styles from "./App.module.css";
 
 const initialState = {
   position: [0, 0],
-  ipAddress: '127.0.0.16',
-  location: 'Place',
-  timezone: 'UTC',
-  isp: 'Shaw'
+  ipAddress: 'N/A',
+  location: 'N/A',
+  timezone: 'N/A',
+  isp: 'N/A'
 };
 
 function App() {
@@ -19,9 +19,9 @@ function App() {
 
   return (
     <div className={styles.flexContainer}>
-      <Header ipAddressInformation={ipAddressInformation}/>
+      <Header setIpAddressInformation={setIpAddressInformation}/>
       <IpInfo ipAddressInformation={ipAddressInformation}/>
-      <Map />
+      <Map ipAddressInformation={ipAddressInformation}/>
     </div>
   );
 }
